@@ -1,4 +1,23 @@
 .header-container {
-  min-height: 15vh;
-  background-color: limegreen;
+  height: 15vh;
+
+  background-color: #0B6AFC;
+  color: white;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  // green -> #42B72A
+
+  .icon-title-container {
+    display: flex;
+    gap: 1rem;
+
+    margin-left: 1rem;
+  }
+
+  .menu-icon {
+    margin-right: 1rem;
+  }
 }
