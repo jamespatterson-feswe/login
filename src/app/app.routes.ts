@@ -5,9 +5,5 @@ export const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./modules/index').then(m => m.LoginModule)
-  },
-  {
-    path: 'sign-up',
-    loadChildren: () => import('./modules/index').then(m => m.LoginModule)
   }
 ];
