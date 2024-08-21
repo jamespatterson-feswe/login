@@ -12,7 +12,15 @@ import { FooterComponent } from './components/footer/footer.component';
     RouterOutlet
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  templateUrl: './app.component.html',
+  template: `
+    <app-header></app-header>
+
+    <main class="main-container" id="main">
+      <router-outlet></router-outlet>
+    </main>
+
+    <app-footer></app-footer>
+  `,
   styleUrl: './app.component.scss'
 })
 export class AppComponent {}
